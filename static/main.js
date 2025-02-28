@@ -38,7 +38,9 @@ map.on('resize', function(e) {
     map.fitWorld({reset: true}).zoomIn();
 });
 
-setInterval(fetchISSLocation(map, marker), 5000);
+setInterval(function() {
+    fetchISSLocation(map, marker);
+}, 5000);
 fetchISSLocation(map,marker);
 
 
