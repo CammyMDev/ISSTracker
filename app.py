@@ -19,7 +19,6 @@ def get_location():
         print("Error fetching ISS location:", e)
 
 
-
 @app.route('/')
 def index():
       return render_template('index.html')
